@@ -1,0 +1,20 @@
+.home {
+    background: linear-gradient(
+    to bottom
+    ,rgb(255,255,255,.1),rgba(255, 255, 255, .7)),url('../images/b1.jpg');
+    background-repeat: no-repeat;
+    background-position-y: top ;
+    background-position-x: center;
+    background-size: cover;
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+}
+
+.home .container {
+    position:absolute;
+    top: 85%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align:center;
+}

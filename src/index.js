@@ -1,13 +1,23 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
 import * as serviceWorkerRegistration from './serviceWorkerRegistration';
-import reportWebVitals from './reportWebVitals';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap-icons/font/bootstrap-icons.css';
+import './index.css';
+import Navbar from './component/Navbar';
+import Home from './component/Home';
+import About from './component/About';
+import { ScrollSpy } from "organism-react-scroll-nav";
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <ScrollSpy id="Home">
+      <Navbar />
+    </ScrollSpy>
+    <Home />
+    <ScrollSpy id="About">
+      <About />
+    </ScrollSpy>
   </React.StrictMode>,
   document.getElementById('root')
 );
@@ -16,8 +26,3 @@ ReactDOM.render(
 // unregister() to register() below. Note this comes with some pitfalls.
 // Learn more about service workers: https://cra.link/PWA
 serviceWorkerRegistration.unregister();
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
