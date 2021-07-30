@@ -7,13 +7,15 @@ function About() {
     <div>
         <div className="about container text-center">
             <h2>Tentang Kami</h2>
-            <p>
-                Relaktasi Indonesia merupakan platform digital penyedia layanan konsultasi 
-                dan terapi upaya peningkatan ASI (Re-laktasi) pada ibu yang ASI-nya sempat 
-                terhenti atau kurang oleh tenaga Kesehatan wanita terlatih yang tersebar 
-                di beberapa wilayah di Indonesia sejak tahun 2018.
-            </p>
             <div className="row">
+                <div className="col-12">
+                    <p>
+                        Relaktasi Indonesia merupakan platform digital penyedia layanan konsultasi 
+                        dan terapi upaya peningkatan ASI (Re-laktasi) pada ibu yang ASI-nya sempat 
+                        terhenti atau kurang oleh tenaga Kesehatan wanita terlatih yang tersebar 
+                        di beberapa wilayah di Indonesia sejak tahun 2018.
+                    </p>
+                </div>
                 <div className="col-6">
                     <div className="px-5 py-3">
                         <img src={aboutImg} className="img-fluid rounded" alt="Gambar tentang kami" />

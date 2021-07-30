@@ -1,0 +1,47 @@
+.service {
+    margin: 80px auto;
+}
+
+.service h2 {
+    font-weight: bold;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    position: relative;
+}
+
+.service h2::after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 50px;
+    height: 3px;
+    background: #81c042;
+    bottom: 0;
+    left: calc(50% - 25px);
+}
+
+.service .box {
+    border: .1px solid #c4e2a7;
+    transition: .5s;
+}
+
+.service .box:hover {
+    background-color: #81c042;
+    color: #fff;
+    transform: translateY(-10px);
+}
+
+.service .bi {
+    background-color: #81c042;
+    color: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: -7px -7px #c4e2a7;
+    transition: .5s;
+}
+
+.service .box:hover .bi{
+    background-color: #fff;
+    color: #81c042;
+}
+

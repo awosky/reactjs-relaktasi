@@ -34,10 +34,13 @@ function Navbar() {
                             <SmoothScrollLink targetId="About" > Tentang </SmoothScrollLink>
                         </li>
                         <li className="nav-item">
-                            <SmoothScrollLink targetId="Portofolio"> Layanan </SmoothScrollLink>
+                            <SmoothScrollLink targetId="Service"> Layanan </SmoothScrollLink>
                         </li>
                         <li className="nav-item">
-                            <SmoothScrollLink targetId="Testimony"> Konselor </SmoothScrollLink>
+                            <SmoothScrollLink targetId="Team"> Konselor </SmoothScrollLink>
+                        </li>
+                        <li className="nav-item">
+                            <SmoothScrollLink targetId="Testimony"> Testimoni </SmoothScrollLink>
                         </li>
                         <li className="nav-item">
                             <SmoothScrollLink targetId="Contact" className="rounded-pill"> Hubungi Kami </SmoothScrollLink>

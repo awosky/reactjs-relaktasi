@@ -7,6 +7,8 @@ import './index.css';
 import Navbar from './component/Navbar';
 import Home from './component/Home';
 import About from './component/About';
+import Service from './component/Service';
+import Team from './component/Team';
 import { ScrollSpy } from "organism-react-scroll-nav";
 
 ReactDOM.render(
@@ -17,6 +19,12 @@ ReactDOM.render(
     <Home />
     <ScrollSpy id="About">
       <About />
+    </ScrollSpy>
+    <ScrollSpy id="Service">
+      <Service />
+    </ScrollSpy>
+    <ScrollSpy id="Team">
+      <Team />
     </ScrollSpy>
   </React.StrictMode>,
   document.getElementById('root')
