@@ -1,0 +1,56 @@
+.testimony {
+    margin: 80px auto;
+}
+
+.testimony .parallax .parallax-banner-layer-0{
+    filter: opacity(20%);
+    /* filter: blur(10px); */
+    /* filter: grayscale(50%);; */
+}
+
+.testimony .titleTesti {
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+
+.testimony h2 {
+    font-weight: bold;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    position: relative;
+}
+
+.testimony h2::after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 50px;
+    height: 3px;
+    background: #81c042;
+    bottom: 0;
+    left: calc(50% - 25px);
+}
+
+.testimony .carouselContainer{
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    top:15%;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+
+.testimony .carouselContainer img {
+    height: 20vh;
+}
+
+.testimony .carouselContainer .fa {
+    font-size: x-large;
+    color: #81c042;
+    padding: 5px;
+}

@@ -3,12 +3,14 @@ import ReactDOM from 'react-dom';
 import * as serviceWorkerRegistration from './serviceWorkerRegistration';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap-icons/font/bootstrap-icons.css';
+import 'font-awesome/css/font-awesome.min.css';
 import './index.css';
 import Navbar from './component/Navbar';
 import Home from './component/Home';
 import About from './component/About';
 import Service from './component/Service';
 import Team from './component/Team';
+import Testimony from './component/Testimony';
 import { ScrollSpy } from "organism-react-scroll-nav";
 
 ReactDOM.render(
@@ -25,6 +27,9 @@ ReactDOM.render(
     </ScrollSpy>
     <ScrollSpy id="Team">
       <Team />
+    </ScrollSpy>
+    <ScrollSpy id="Testimony">
+      <Testimony />
     </ScrollSpy>
   </React.StrictMode>,
   document.getElementById('root')
