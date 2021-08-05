@@ -1,0 +1,41 @@
+.contact {
+    margin: 80px auto;
+}
+
+.contact h2 {
+    font-weight: bold;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    position: relative;
+}
+
+.contact h2::after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 50px;
+    height: 3px;
+    background: #81c042;
+    bottom: 0;
+    left: calc(50% - 25px);
+}
+
+.contact .bi {
+    color: #81c042;
+    border: .1px solid #81c04270;
+    padding: 15px;
+    border-radius: 20px;
+    transition: 0.5s;
+}
+
+.contact .bi:hover {
+    background: #81c042;
+    color: #fff;
+    border: 0;
+}
+
+.contact iframe {
+    position: relative;
+    width: 100%;
+    min-height: 400px;
+}
