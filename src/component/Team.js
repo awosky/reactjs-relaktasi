@@ -2,6 +2,7 @@ import React from 'react';
 import './Team.css';
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
+import Fade from 'react-reveal/Fade';
 import team1 from '../images/team1.jpg';
 import team2 from '../images/team2.jpg';
 import team3 from '../images/team3.jpg';
@@ -34,80 +35,84 @@ function Team() {
     return (
         <div>
             <div className="team container text-center">
-                <h2>Tim Kami</h2>
-                <Carousel
-                    arrows={false}
-                    swipeable={true}
-                    draggable={true}
-                    showDots={true}
-                    responsive={responsive}
-                    infinite={true}
-                    autoPlay={true}
-                    autoPlaySpeed={3000}
-                    keyBoardControl={true}
-                    customTransition="transform 300ms ease-in-out"
-                    transitionDuration={500}
-                    containerClass="carousel-container"
-                    dotListClass="custom-dot-list-style"
-                    itemClass="carousel-item-padding-40-px"
-                >
-                    <div className="p-5">
-                        <img src={team1} className="img-fluid rounded-circle shadow" alt="Konselor"/>
-                        <div className="pt-3">
-                            <h5>Team1</h5>
-                            <small>Founder</small>
+                <Fade bottom>
+                    <h2>Tim Kami</h2>
+                </Fade>
+                <Fade bottom>
+                    <Carousel
+                        arrows={false}
+                        swipeable={true}
+                        draggable={true}
+                        showDots={true}
+                        responsive={responsive}
+                        infinite={true}
+                        autoPlay={true}
+                        autoPlaySpeed={3000}
+                        keyBoardControl={true}
+                        customTransition="transform 300ms ease-in-out"
+                        transitionDuration={500}
+                        containerClass="carousel-container"
+                        dotListClass="custom-dot-list-style"
+                        itemClass="carousel-item-padding-40-px"
+                    >
+                        <div className="p-5">
+                            <img src={team1} className="img-fluid rounded-circle shadow" alt="Konselor"/>
+                            <div className="pt-3">
+                                <h5>Team1</h5>
+                                <small>Founder</small>
+                            </div>
                         </div>
-                    </div>
-                    <div className="p-5">
-                        <img src={team2} className="img-fluid rounded-circle shadow" alt="Konselor"/>
-                        <div className="pt-3">
-                            <h5>Team2</h5>
-                            <small>Konselor</small>
+                        <div className="p-5">
+                            <img src={team2} className="img-fluid rounded-circle shadow" alt="Konselor"/>
+                            <div className="pt-3">
+                                <h5>Team2</h5>
+                                <small>Konselor</small>
+                            </div>
                         </div>
-                    </div>
-                    <div className="p-5">
-                        <img src={team3} className="img-fluid rounded-circle shadow" alt="Konselor"/>
-                        <div className="pt-3">
-                            <h5>Team3</h5>
-                            <small>Konselor</small>
+                        <div className="p-5">
+                            <img src={team3} className="img-fluid rounded-circle shadow" alt="Konselor"/>
+                            <div className="pt-3">
+                                <h5>Team3</h5>
+                                <small>Konselor</small>
+                            </div>
                         </div>
-                    </div>
-                    <div className="p-5">
-                        <img src={team4} className="img-fluid rounded-circle shadow" alt="Konselor"/>
-                        <div className="pt-3">
-                            <h5>Team4</h5>
-                            <small>Konselor</small>
+                        <div className="p-5">
+                            <img src={team4} className="img-fluid rounded-circle shadow" alt="Konselor"/>
+                            <div className="pt-3">
+                                <h5>Team4</h5>
+                                <small>Konselor</small>
+                            </div>
                         </div>
-                    </div>
-                    <div className="p-5">
-                        <img src={team5} className="img-fluid rounded-circle shadow" alt="Konselor"/>
-                        <div className="pt-3">
-                            <h5>Team5</h5>
-                            <small>Konselor</small>
+                        <div className="p-5">
+                            <img src={team5} className="img-fluid rounded-circle shadow" alt="Konselor"/>
+                            <div className="pt-3">
+                                <h5>Team5</h5>
+                                <small>Konselor</small>
+                            </div>
                         </div>
-                    </div>
-                    <div className="p-5">
-                        <img src={team6} className="img-fluid rounded-circle shadow" alt="Konselor"/>
-                        <div className="pt-3">
-                            <h5>Team6</h5>
-                            <small>Konselor</small>
+                        <div className="p-5">
+                            <img src={team6} className="img-fluid rounded-circle shadow" alt="Konselor"/>
+                            <div className="pt-3">
+                                <h5>Team6</h5>
+                                <small>Konselor</small>
+                            </div>
                         </div>
-                    </div>
-                    <div className="p-5">
-                        <img src={team7} className="img-fluid rounded-circle shadow" alt="Konselor"/>
-                        <div className="pt-3">
-                            <h5>Team7</h5>
-                            <small>Konselor</small>
+                        <div className="p-5">
+                            <img src={team7} className="img-fluid rounded-circle shadow" alt="Konselor"/>
+                            <div className="pt-3">
+                                <h5>Team7</h5>
+                                <small>Konselor</small>
+                            </div>
                         </div>
-                    </div>
-                    <div className="p-5">
-                        <img src={team8} className="img-fluid rounded-circle shadow" alt="Konselor"/>
-                        <div className="pt-3">
-                            <h5>Team8</h5>
-                            <small>Konselor</small>
+                        <div className="p-5">
+                            <img src={team8} className="img-fluid rounded-circle shadow" alt="Konselor"/>
+                            <div className="pt-3">
+                                <h5>Team8</h5>
+                                <small>Konselor</small>
+                            </div>
                         </div>
-                    </div>
-                </Carousel>
+                    </Carousel>
+                </Fade>
             </div>
         </div>
     );

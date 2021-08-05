@@ -1,0 +1,49 @@
+.footer {
+    margin-top: 80px;
+    border-top: 1px solid #dee2e6;
+}
+
+.footer img {
+    height: 150px;
+    object-fit: cover;
+}
+
+.footer .footerContact {
+    font-size: small;
+}
+
+
+.footer ul li {
+    list-style-type: none;
+}
+
+.footer ul li a {
+    color: #6c757d;
+    text-decoration: none;
+}
+.footer ul li .fa {
+    background: #81c042;
+    color: white;
+    font-size: medium;
+    padding: 2px 4px;
+    border-radius: 3px;
+}
+
+.footer ul li .fa-chevron-right {
+    color: #81c042;
+    font-size: small;
+    background: none;
+}
+
+.footer ul li:hover{
+    border: none;
+}
+
+.footer ul li:hover a{
+    color: black;
+}
+
+.footer .footerCopyright {
+    background: #81c042;
+    color: white;
+}

@@ -54,3 +54,13 @@
     color: #81c042;
     padding: 5px;
 }
+
+@media (max-width: 576px) { 
+    .testimony .carouselContainer{
+        top:10%;
+    }
+
+    .testimony .carouselContainer img {
+        height: 15vh;
+    }
+}

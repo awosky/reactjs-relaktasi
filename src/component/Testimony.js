@@ -3,6 +3,7 @@ import './Testimony.css';
 import { ParallaxProvider, ParallaxBanner } from 'react-scroll-parallax';
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
+import Fade from 'react-reveal/Fade';
 import background from '../images/b0.jpg';
 import testi1 from '../images/team7.jpg';
 import testi2 from '../images/team2.jpg';
@@ -44,66 +45,69 @@ function Testimony() {
                         }}
                     >
                         <div className="titleTesti p-3">
-                            <h2>Testimoni</h2>
+                            <Fade bottom>
+                                <h2>Testimoni</h2>
+                            </Fade>
                         </div>
                         <div className="container carouselContainer">
-                            <Carousel
-                                swipeable={true}
-                                draggable={true}
-                                showDots={true}
-                                responsive={responsive}
-                                infinite={true}
-                                autoPlay={true}
-                                autoPlaySpeed={4000}
-                                keyBoardControl={true}
-                                customTransition="transform 300ms ease-in-out"
-                                transitionDuration={500}
-                                containerClass="carousel-container"
-                                removeArrowOnDeviceType={["tablet", "mobile"]}
-                                dotListClass="custom-dot-list-style"
-                                itemClass="carousel-item-padding-40-px"
-                            >
-                                <div className="p-5">
-                                    <img src={testi1} className="img-fluid rounded-circle shadow" alt="Konselor"/>
-                                    <div className="pt-3">
-                                        <h5 className="mb-0 fw-bold">Testi1</h5>
-                                        <small className="text-muted fw-bold">Ibu Rumah Tangga</small>
-                                        <p className="my-2 fw-bold fst-italic">
-                                            <i className="fa fa-quote-left" aria-hidden="true"></i>
-                                            Ut possimus qui ut temporibus culpa velit eveniet modi omnis est adipisci expedita at voluptas atque vitae autem.
-                                            Ut possimus qui ut temporibus culpa velit eveniet modi omnis est adipisci expedita at voluptas atque vitae autem.
-                                            <i className="fa fa-quote-right" aria-hidden="true"></i>
-                                        </p>
+                            <Fade>
+                                <Carousel
+                                    swipeable={true}
+                                    draggable={true}
+                                    showDots={true}
+                                    responsive={responsive}
+                                    infinite={true}
+                                    autoPlay={true}
+                                    autoPlaySpeed={4000}
+                                    keyBoardControl={true}
+                                    customTransition="transform 300ms ease-in-out"
+                                    transitionDuration={500}
+                                    containerClass="carousel-container"
+                                    removeArrowOnDeviceType={["tablet", "mobile"]}
+                                    dotListClass="custom-dot-list-style"
+                                    itemClass="carousel-item-padding-40-px"
+                                >
+                                    <div className="py-5 px-sm-5 px-3">
+                                        <img src={testi1} className="img-fluid rounded-circle shadow" alt="Konselor"/>
+                                        <div className="pt-3">
+                                            <h5 className="mb-0 fw-bold">Testi1</h5>
+                                            <small className="text-muted fw-bold">Ibu Rumah Tangga</small>
+                                            <p className="my-2 fw-bold fst-italic">
+                                                <i className="fa fa-quote-left" aria-hidden="true"></i>
+                                                Ut possimus qui ut temporibus culpa velit eveniet modi omnis est adipisci expedita at voluptas atque vitae autem.
+                                                Ut possimus qui ut temporibus culpa velit eveniet modi omnis est adipisci expedita at voluptas atque vitae autem.
+                                                <i className="fa fa-quote-right" aria-hidden="true"></i>
+                                            </p>
+                                        </div>
                                     </div>
-                                </div>
-                                <div className="py-5">
-                                    <img src={testi2} className="img-fluid rounded-circle shadow" alt="Konselor"/>
-                                    <div className="pt-3">
-                                        <h5 className="mb-0 fw-bold">Testi2</h5>
-                                        <small className="text-muted fw-bold">Perawat</small>
-                                        <p className="my-2 fw-bold fst-italic">
-                                            <i className="fa fa-quote-left" aria-hidden="true"></i>
-                                            Ut possimus qui ut temporibus culpa velit eveniet modi omnis est adipisci expedita at voluptas atque vitae autem.
-                                            Ut possimus qui ut temporibus culpa velit eveniet modi omnis est adipisci expedita at voluptas atque vitae autem.
-                                            <i className="fa fa-quote-right" aria-hidden="true"></i>
-                                        </p>
+                                    <div className="py-5 px-sm-5 px-3">
+                                        <img src={testi2} className="img-fluid rounded-circle shadow" alt="Konselor"/>
+                                        <div className="pt-3">
+                                            <h5 className="mb-0 fw-bold">Testi2</h5>
+                                            <small className="text-muted fw-bold">Perawat</small>
+                                            <p className="my-2 fw-bold fst-italic">
+                                                <i className="fa fa-quote-left" aria-hidden="true"></i>
+                                                Ut possimus qui ut temporibus culpa velit eveniet modi omnis est adipisci expedita at voluptas atque vitae autem.
+                                                Ut possimus qui ut temporibus culpa velit eveniet modi omnis est adipisci expedita at voluptas atque vitae autem.
+                                                <i className="fa fa-quote-right" aria-hidden="true"></i>
+                                            </p>
+                                        </div>
                                     </div>
-                                </div>
-                                <div className="p-5">
-                                    <img src={testi3} className="img-fluid rounded-circle shadow" alt="Konselor"/>
-                                    <div className="pt-3">
-                                        <h5 className="mb-0 fw-bold">Testi3</h5>
-                                        <small className="text-muted fw-bold">Guru</small>
-                                        <p className="my-2 fw-bold fst-italic">
-                                            <i className="fa fa-quote-left" aria-hidden="true"></i>
-                                            Ut possimus qui ut temporibus culpa velit eveniet modi omnis est adipisci expedita at voluptas atque vitae autem.
-                                            Ut possimus qui ut temporibus culpa velit eveniet modi omnis est adipisci expedita at voluptas atque vitae autem.
-                                            <i className="fa fa-quote-right" aria-hidden="true"></i>
-                                        </p>
+                                    <div className="py-5 px-sm-5 px-3">
+                                        <img src={testi3} className="img-fluid rounded-circle shadow" alt="Konselor"/>
+                                        <div className="pt-3">
+                                            <h5 className="mb-0 fw-bold">Testi3</h5>
+                                            <small className="text-muted fw-bold">Guru</small>
+                                            <p className="my-2 fw-bold fst-italic">
+                                                <i className="fa fa-quote-left" aria-hidden="true"></i>
+                                                Ut possimus qui ut temporibus culpa velit eveniet modi omnis est adipisci expedita at voluptas atque vitae autem.
+                                                Ut possimus qui ut temporibus culpa velit eveniet modi omnis est adipisci expedita at voluptas atque vitae autem.
+                                                <i className="fa fa-quote-right" aria-hidden="true"></i>
+                                            </p>
+                                        </div>
                                     </div>
-                                </div>
-                            </Carousel>
-                            
+                                </Carousel>
+                            </Fade>
                         </div>
                     </ParallaxBanner>
                 </ParallaxProvider>

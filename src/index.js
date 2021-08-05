@@ -12,10 +12,11 @@ import Service from './component/Service';
 import Team from './component/Team';
 import Testimony from './component/Testimony';
 import Contact from './component/Contact';
+import Footer from './component/Footer';
 import { ScrollSpy } from "organism-react-scroll-nav";
 
 ReactDOM.render(
-  <React.StrictMode>
+  <>
     <ScrollSpy id="Home">
       <Navbar />
     </ScrollSpy>
@@ -35,7 +36,8 @@ ReactDOM.render(
     <ScrollSpy id="Contact">
       <Contact />
     </ScrollSpy>
-  </React.StrictMode>,
+    <Footer />
+  </>,
   document.getElementById('root')
 );
 
