@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import * as serviceWorkerRegistration from './serviceWorkerRegistration';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/js/bootstrap.min.js';
 import 'bootstrap-icons/font/bootstrap-icons.css';
 import 'font-awesome/css/font-awesome.min.css';
 import './index.css';
@@ -16,7 +17,7 @@ import Footer from './component/Footer';
 import { ScrollSpy } from "organism-react-scroll-nav";
 
 ReactDOM.render(
-  <>
+  <React.StrictMode>
     <ScrollSpy id="Home">
       <Navbar />
     </ScrollSpy>
@@ -37,7 +38,7 @@ ReactDOM.render(
       <Contact />
     </ScrollSpy>
     <Footer />
-  </>,
+  </React.StrictMode>,
   document.getElementById('root')
 );
 
