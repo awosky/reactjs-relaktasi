@@ -17,7 +17,7 @@ import Footer from './component/Footer';
 import { ScrollSpy } from "organism-react-scroll-nav";
 
 ReactDOM.render(
-  <React.StrictMode>
+  <>
     <ScrollSpy id="Home">
       <Navbar />
     </ScrollSpy>
@@ -38,7 +38,7 @@ ReactDOM.render(
       <Contact />
     </ScrollSpy>
     <Footer />
-  </React.StrictMode>,
+  </>,
   document.getElementById('root')
 );
 
