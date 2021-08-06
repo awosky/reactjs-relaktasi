@@ -7,6 +7,14 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+div .spy-tar-Home {
+  padding-top: 0 !important;
+}
+
+div[class^="spy-tar"] {
+  padding-top: 100px;
+}
+
 @media (max-width: 576px) { 
     * p, * small {
       font-size: small !important;
