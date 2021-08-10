@@ -4,10 +4,7 @@ import { ParallaxProvider, ParallaxBanner } from 'react-scroll-parallax';
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 import Fade from 'react-reveal/Fade';
-import background from '../images/b0.jpg';
-import testi1 from '../images/team7.jpg';
-import testi2 from '../images/team2.jpg';
-import testi3 from '../images/team4.jpg';
+import {background, team2,team4,team7} from '../assets'
 
 function Testimony() {
     const responsive = {
@@ -68,7 +65,7 @@ function Testimony() {
                                     itemClass="carousel-item-padding-40-px"
                                 >
                                     <div className="py-5 px-sm-5 px-3">
-                                        <img src={testi1} className="img-fluid rounded-circle shadow" alt="Konselor"/>
+                                        <img src={team2} className="img-fluid rounded-circle shadow" alt="Konselor"/>
                                         <div className="pt-3">
                                             <h5 className="mb-0 fw-bold">Testi1</h5>
                                             <small className="text-muted fw-bold">Ibu Rumah Tangga</small>
@@ -81,7 +78,7 @@ function Testimony() {
                                         </div>
                                     </div>
                                     <div className="py-5 px-sm-5 px-3">
-                                        <img src={testi2} className="img-fluid rounded-circle shadow" alt="Konselor"/>
+                                        <img src={team4} className="img-fluid rounded-circle shadow" alt="Konselor"/>
                                         <div className="pt-3">
                                             <h5 className="mb-0 fw-bold">Testi2</h5>
                                             <small className="text-muted fw-bold">Perawat</small>
@@ -94,7 +91,7 @@ function Testimony() {
                                         </div>
                                     </div>
                                     <div className="py-5 px-sm-5 px-3">
-                                        <img src={testi3} className="img-fluid rounded-circle shadow" alt="Konselor"/>
+                                        <img src={team7} className="img-fluid rounded-circle shadow" alt="Konselor"/>
                                         <div className="pt-3">
                                             <h5 className="mb-0 fw-bold">Testi3</h5>
                                             <small className="text-muted fw-bold">Guru</small>

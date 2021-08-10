@@ -12,7 +12,7 @@ div .spy-tar-Home {
 }
 
 div[class^="spy-tar"] {
-  padding-top: 100px;
+  padding-top: 120px;
 }
 
 @media (max-width: 576px) { 

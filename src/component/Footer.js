@@ -1,6 +1,6 @@
 import React from 'react';
 import './Footer.css';
-import logo from '../images/logo.png';
+import {logo} from '../assets'
 import { SmoothScrollLink } from "organism-react-scroll-nav";
 
 function Footer() {

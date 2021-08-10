@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import './Navbar.css';
-import logo from '../images/logo.png';
+import {logo} from '../assets'
 import { SmoothScrollLink } from "organism-react-scroll-nav";
 
 function Navbar() {
